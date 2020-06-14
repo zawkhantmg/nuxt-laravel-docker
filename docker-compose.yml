@@ -36,9 +36,11 @@ services:
             # Password for root access
             MYSQL_ROOT_PASSWORD: root
             MYSQL_DATABASE: app
+            MYSQL_USER: user
+            MYSQL_PASSWORD: password
         command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
         volumes:
-            - ./docker/db/myapp:/var/lib/mysql
+            - ./docker/db/appdata:/var/lib/mysql
             - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
         ports:
             - 9000:3306
