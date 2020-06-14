@@ -1,1 +1,1 @@
-Nuxt-Laravel-Docker
+# Nuxt-Laravel
