@@ -24,3 +24,11 @@
 ### One Container Stop and Remove
   - Run this command in project root folder.
     - ``` bash one-container-stop.sh ```
+
+### Clean Cache
+  - Run this command in project root folder.
+    - ``` bash clean-cache.sh ```
+
+### Migrate and Seeding
+  - Run this command in project root folder.
+    - ``` bash migrate-and-seed.sh ```
