@@ -7,9 +7,11 @@ BOLD=$(tput bold)
 NORM=$(tput sgr0)
 
 cd "api"
+cp .env.sample .env
 composer install
 composer dump-autoload
 cd "../client"
+cp .env.sample .env
 yarn install
 cd ".."
 docker-compose up --build -d
